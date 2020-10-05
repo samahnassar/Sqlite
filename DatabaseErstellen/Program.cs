@@ -13,7 +13,10 @@ namespace DatabaseErstellen
             {
                 // Create
                 Console.WriteLine("Inserting a new Course");
-                db.Add(new Kurs {KuId = 3 });
+                
+                db.Add(new Kurs {KuId = 1 });
+                db.SaveChanges();
+                db.Add(new Kurs { KuId = 2 });
                 db.SaveChanges();
 
                 // Read
